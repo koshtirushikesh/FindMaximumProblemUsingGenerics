@@ -63,5 +63,11 @@ namespace FindMaxNumTest
             string result = findMax.StringValue("Apple", "Peach", "Banana");
             Assert.AreEqual("Peach", result);
         }
+        [Test]
+        public void GivenMaxThirdNum_WhenAnalysed_ShouldReturnThirdMax()
+        {
+            string result = findMax.StringValue("Apple", "Banana", "Peach");
+            Assert.AreEqual("Peach", result);
+        }
     }
 }

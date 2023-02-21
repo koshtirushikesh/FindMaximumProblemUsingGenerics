@@ -13,6 +13,7 @@ namespace FindMaximumProbleamGenerics
         {
             FindMax findMax = new FindMax();
             Console.WriteLine(findMax.IntNumber(50, 40, 30));
+            Console.WriteLine(findMax.FloatNumber(55.5f,33.4f,22.3f));
 
             Console.ReadLine();
         }

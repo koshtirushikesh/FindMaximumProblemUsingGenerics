@@ -1,7 +1,7 @@
 using FindMaximumProbleamGenerics;
 namespace FindMaxNumTest
 {
-    public class FindMaxTestsForNormalIntClass
+    public class FindMaxTestsForNormalClassInt
     {
         FindMax findMax = new FindMax();
 
@@ -25,5 +25,18 @@ namespace FindMaxNumTest
             int result = findMax.IntNumber(17, 1, 26);
             Assert.AreEqual(26, result);
         }
+    }
+    public class FindMaxTestsForNormalClassFloat
+    {
+        FindMax findMax = new FindMax();
+
+        [Test]
+        public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnFirstMax()
+        {
+            float result = findMax.FloatNumber(26.6f, 17.7f, 1.1f);
+            Assert.AreEqual(26.6f, result);
+        }
+
+        
     }
 }

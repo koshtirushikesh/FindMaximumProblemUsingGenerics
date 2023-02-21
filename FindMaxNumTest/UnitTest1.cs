@@ -54,8 +54,8 @@ namespace FindMaxNumTest
         [Test]
         public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnFirstMax()
         {
-            string result = findMax.StringValue("Apple", "Peach", "Banana");
-            Assert.AreEqual("Peach", result);
+            float result = findMax.FloatNumber(26.6f, 17.7f, 1.1f);
+            Assert.AreEqual(26.6f, result);
         }
     }
 }

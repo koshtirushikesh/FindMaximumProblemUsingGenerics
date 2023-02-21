@@ -15,8 +15,14 @@ namespace FindMaximumProbleamGenerics
                 return firstNum;
             else if (secondNum.CompareTo(thirdNum) > 0 && secondNum.CompareTo(firstNum) > 0)
                 return secondNum;
-            else 
+            else
                 return thirdNum;
+        }
+
+        public T GenricValue(params T[] values)
+        {
+            Array.Sort(values);
+            return values[values.Length - 1];
         }
     }
 }

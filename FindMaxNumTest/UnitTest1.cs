@@ -29,7 +29,6 @@ namespace FindMaxNumTest
     public class FindMaxTestsForNormalClassFloat
     {
         FindMax findMax = new FindMax();
-
         [Test]
         public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnFirstMax()
         {
@@ -37,6 +36,13 @@ namespace FindMaxNumTest
             Assert.AreEqual(26.6f, result);
         }
 
-        
+        [Test]
+        public void GivenMaxSecondNum_WhenAnalysed_ShouldReturnSecondMax()
+        {
+            float result = findMax.FloatNumber(17.7f, 26.6f, 1.1f);
+            Assert.AreEqual(26.6f, result);
+        }
+
+
     }
 }

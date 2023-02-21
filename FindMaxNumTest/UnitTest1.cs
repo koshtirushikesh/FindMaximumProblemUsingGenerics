@@ -18,5 +18,12 @@ namespace FindMaxNumTest
             int result = findMax.IntNumber(17, 26, 1);
             Assert.AreEqual(26, result);
         }
+
+        [Test]
+        public void GivenMaxThirdNum_WhenAnalysed_ShouldReturnThirdMax()
+        {
+            int result = findMax.IntNumber(17, 1, 26);
+            Assert.AreEqual(26, result);
+        }
     }
 }

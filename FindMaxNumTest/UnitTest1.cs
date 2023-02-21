@@ -35,14 +35,12 @@ namespace FindMaxNumTest
             float result = findMax.FloatNumber(26.6f, 17.7f, 1.1f);
             Assert.AreEqual(26.6f, result);
         }
-
         [Test]
         public void GivenMaxSecondNum_WhenAnalysed_ShouldReturnSecondMax()
         {
             float result = findMax.FloatNumber(17.7f, 26.6f, 1.1f);
             Assert.AreEqual(26.6f, result);
         }
-
 
     }
 }
